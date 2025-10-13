@@ -50,4 +50,5 @@ More specific to imaging
     smoothing_intro
     smoothing_as_convolution
     random_fields
+    fourier_no_ei
     README
