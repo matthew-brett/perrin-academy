@@ -37,9 +37,6 @@ clean:
 	python ./tools/clear_all_ipynb.py .
 	rm -rf *-stamp
 
-notebook_names = exploring_r_formula ioannidis_2005
-notebook_pages := $(patsubst %,$(WWWDIR)/%.html, $(notebook_names))
-
 wwwdir: wwwdir-stamp
 wwwdir-stamp:
 	if [ ! -d $(WWWDIR) ]; then mkdir -p $(WWWDIR); fi
@@ -51,11 +48,9 @@ $(WWWDIR)/%.html : %.ipynb
 html-only:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(WWWDIR)
 	@echo
-	@echo "HTML build finished. The HTML pages are in $(WWWDIR)."
+	@echo "HTML build finished. The HTML pages are in $(WWWDIR)."G
 
-html: wwwdir $(notebook_pages) html-only
-	# To keep an old link from failing
-	cp $(WWWDIR)/exploring_r_formula.ipynb $(WWWDIR)/exploring_r_formula_evaluated.ipynb
+html: wwwdir html-only
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) _build/dirhtml
@@ -112,5 +107,5 @@ doctest:
 
 github: html
 	chmod -R uog+r $(WWWDIR)
-	if [ -e "CNAME" ]; then cp CNAME $(SITE); fi
-	ghp-import -n $(SITE) -p -f
+	if [ -e "CNAME" ]; then cp CNAME $(WWWDIR); fi
+	ghp-import -n $(WWWDIR) -p -f
