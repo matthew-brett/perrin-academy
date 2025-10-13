@@ -110,6 +110,7 @@ doctest:
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in _build/doctest/output.txt."
 
-upload: html
+github: html
 	chmod -R uog+r $(WWWDIR)
-	rsync -avrzH --copy-links --delete -e ssh  $(WWWDIR)/ $(WWW)
+	if [ -e "CNAME" ]; then cp CNAME $(SITE); fi
+	ghp-import -n $(SITE) -p -f

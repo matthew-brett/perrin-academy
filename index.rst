@@ -7,10 +7,12 @@
 Perrin Academy
 **************
 
-Some tutorials to do with brain imaging and statistics.
+This site contained some tutorials to do with brain imaging and statistics.
 
 The most recent copy of most of my tutorials are now in `my teaching pages
-<https://matthew-brett.github.com/teaching>`_.
+<https://matthew-brett.github.com/teaching>`_.  And so, the tutorials links
+here now redirect to the more recent versions.  "Please update your
+bookmarks".
 
 General computing and mathematics
 =================================
