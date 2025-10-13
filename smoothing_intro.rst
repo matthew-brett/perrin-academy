@@ -2,4 +2,4 @@
 An Introduction to Smoothing
 ############################
 
-This page has moved to: https://matthew-brett.github.com/teaching/smoothing_intro.html
+This page has moved to: https://matthew-brett.github.io/teaching/smoothing_intro.html

@@ -10,7 +10,7 @@ Perrin Academy
 This site contained some tutorials to do with brain imaging and statistics.
 
 The most recent copy of most of my tutorials are now in `my teaching pages
-<https://matthew-brett.github.com/teaching>`_.  And so, the tutorials links
+<https://matthew-brett.github.io/teaching>`_.  And so, the tutorials links
 here now redirect to the more recent versions.  "Please update your
 bookmarks".
 
@@ -25,9 +25,9 @@ General statistics
 
 * :doc:`glm_intro`;
 * :doc:`bonferroni_correction`;
-* `Exploring the R formula <exploring_r_formula.html>`_;
+* `Exploring the R formula <http://nbviewer.jupyter.org/github/matthew-brett/teaching/blob/main/exploring_r_formula.ipynb>`_;
 * `Notes on "why most published research findings are false"
-  <ioannidis_2005.html>`_;
+  <https://matthew-brett.github.io/teaching/ioannidis_2005.html>`_;
 
 More specific to imaging
 ========================
@@ -43,5 +43,11 @@ More specific to imaging
     :hidden:
 
     angle_sum
+    sum_of_cosines
+    glm_intro
+    bonferroni_correction
+    correlated_regressors
     smoothing_intro
+    smoothing_as_convolution
+    random_fields
     README
